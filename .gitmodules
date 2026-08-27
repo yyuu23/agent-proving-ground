@@ -1,0 +1,3 @@
+[submodule "src/agent_proving_ground/_view/ts-mono"]
+	path = src/agent_proving_ground/_view/ts-mono
+	url = https://github.com/meridianlabs-ai/ts-mono.git

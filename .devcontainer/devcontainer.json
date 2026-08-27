@@ -1,0 +1,33 @@
+{
+  "name": "agent-proving-ground Devcontainer",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "workspaceMount": "source=${localWorkspaceFolder},target=/home/inspect/app,type=bind,consistency=cached",
+  "workspaceFolder": "/home/inspect/app",
+  "mounts": [
+    {
+      "source": "${localEnv:HOME}${localEnv:USERPROFILE}/.aws",
+      "target": "/home/inspect/.aws",
+      "type": "bind"
+    },
+    {
+      "source": "agent-proving-ground-home",
+      "target": "/home/inspect",
+      "type": "volume"
+    },
+    {
+      "source": "agent-proving-ground-docker-data",
+      "target": "/var/lib/docker",
+      "type": "volume"
+    }
+  ],
+  "runArgs": [
+    "--name=agent-proving-ground-dev",
+    "--hostname=agent-proving-ground",
+    "--privileged"
+  ],
+  "overrideCommand": false,
+  "remoteUser": "inspect"
+}

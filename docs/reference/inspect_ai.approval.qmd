@@ -1,0 +1,23 @@
+---
+reference: agent_proving_ground.approval
+description: Approvers and approval policies.
+---
+
+## Approvers
+
+### auto_approver
+### human_approver
+### read_approval_policies
+### approval
+
+## Types
+
+### Approver
+### Approval
+### ApprovalDecision
+### ApprovalPolicy
+
+## Decorator
+
+### approver
+

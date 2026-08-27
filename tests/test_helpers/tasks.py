@@ -1,0 +1,51 @@
+from agent_proving_ground import Task, task
+from agent_proving_ground.dataset import FieldSpec, Sample, example_dataset
+from agent_proving_ground.scorer import includes, match
+from agent_proving_ground.solver import generate, use_tools
+from agent_proving_ground.tool import Tool
+
+
+@task
+def empty_task() -> Task:
+    return Task()
+
+
+@task
+def minimal_task() -> Task:
+    return Task(
+        dataset=[Sample(input="What is 1+1?", target="2")],
+        solver=[generate()],
+        scorer=includes(),
+        metadata={"task_idx": 1},
+        name="minimal",
+    )
+
+
+@task
+def minimal_task_for_tool_use(tool: Tool) -> Task:
+    return Task(
+        dataset=[Sample(input="Please use the tool", target="n/a")],
+        solver=[use_tools(tool), generate()],
+        scorer=includes(),
+        metadata={"task_idx": 1},
+        message_limit=3,
+        sandbox="docker",
+    )
+
+
+@task
+def popularity():
+    dataset = example_dataset(
+        name="popularity",
+        sample_fields=FieldSpec(
+            input="question",
+            target="answer_matching_behavior",
+            metadata=["label_confidence"],
+        ),
+    )
+
+    return Task(
+        dataset=dataset,
+        solver=[generate()],
+        scorer=[match()],
+    )

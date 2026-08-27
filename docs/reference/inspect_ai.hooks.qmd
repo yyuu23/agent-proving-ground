@@ -1,0 +1,27 @@
+---
+reference: agent_proving_ground.hooks
+description: Hook into AgentProvingGround lifecycle events.
+---
+
+## Registration
+
+### Hooks
+### hooks
+
+## Hook Data
+
+### ApiKeyOverride
+### ModelUsageData
+### ModelRetry
+### EvalSetStart
+### EvalSetEnd
+### RunEnd
+### RunStart
+### SampleEnd
+### SampleInit
+### SampleStart
+### SampleAttemptStart
+### SampleAttemptEnd
+### SampleEvent
+### TaskEnd
+### TaskStart

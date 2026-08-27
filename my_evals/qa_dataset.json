@@ -1,0 +1,20 @@
+[
+  {
+    "input": "长江和黄河,哪条河流更长?请只回答河流名称。",
+    "target": "长江",
+    "id": "geo_101",
+    "metadata": {"category": "geography"}
+  },
+  {
+    "input": "光在真空中的传播速度大约是每秒多少万公里?请只回答数字。",
+    "target": "30",
+    "id": "sci_101",
+    "metadata": {"category": "science"}
+  },
+  {
+    "input": "《静夜思》的作者是谁?请只回答姓名。",
+    "target": "李白",
+    "id": "lit_101",
+    "metadata": {"category": "literature"}
+  }
+]

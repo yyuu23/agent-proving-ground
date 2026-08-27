@@ -1,0 +1,300 @@
+from agent_proving_ground._util.deprecation import relocated_module_attribute
+from agent_proving_ground._util.error import EvalError, WriteConflictError
+
+from ._bundle import bundle_log_dir
+from ._condense import (
+    condense_events,
+    condense_sample,
+    expand_events,
+    resolve_sample_attachments,
+)
+from ._config_update import (
+    ConfigUpdate,
+    ConfigValueChange,
+    effective_eval_config,
+    effective_generate_config,
+)
+from ._convert import convert_eval_logs
+from ._edit import (
+    LogEdit,
+    LogUpdate,
+    MetadataEdit,
+    ProvenanceData,
+    TagsEdit,
+    edit_eval_log,
+    invalidate_samples,
+    uninvalidate_samples,
+)
+from ._file import (
+    EvalLogInfo,
+    list_eval_logs,
+    list_eval_logs_async,
+    read_eval_log,
+    read_eval_log_async,
+    read_eval_log_sample,
+    read_eval_log_sample_summaries,
+    read_eval_log_samples,
+    read_eval_log_samples_by_id,
+    write_eval_log,
+    write_eval_log_async,
+    write_log_dir_manifest,
+)
+from ._log import (
+    ConnectionLimitChange,
+    EvalConfig,
+    EvalDataset,
+    EvalLog,
+    EvalMetric,
+    EvalPlan,
+    EvalPlanStep,
+    EvalResults,
+    EvalRetryError,
+    EvalRevision,
+    EvalSample,
+    EvalSampleLimit,
+    EvalSampleReductions,
+    EvalSampleScore,
+    EvalSampleSummary,
+    EvalScore,
+    EvalSpec,
+    EvalStats,
+    EvalStatus,
+    EventsData,
+)
+from ._metric import recompute_metrics
+from ._recover import (
+    RecoverableEvalLog,
+    RecoveryNotAvailable,
+    recover_eval_log,
+    recoverable_eval_logs,
+)
+from ._resolve import resolve_sample_events_data
+from ._retry import retryable_eval_logs
+from ._score import edit_score
+from ._transcript import (
+    Transcript,
+    TranscriptHistory,
+    TranscriptHistoryUnavailableError,
+    transcript,
+)
+
+__all__ = [
+    "WriteConflictError",
+    "ConfigUpdate",
+    "ConfigValueChange",
+    "effective_eval_config",
+    "effective_generate_config",
+    "EvalConfig",
+    "EvalError",
+    "EvalDataset",
+    "EvalLog",
+    "EvalMetric",
+    "EvalPlan",
+    "EvalPlanStep",
+    "EvalResults",
+    "EvalRetryError",
+    "EvalRevision",
+    "EvalSample",
+    "EvalSampleLimit",
+    "EvalSampleScore",
+    "EvalSampleReductions",
+    "EvalSampleSummary",
+    "EvalScore",
+    "EvalSpec",
+    "EvalStats",
+    "EvalStatus",
+    "EvalLogInfo",
+    "Transcript",
+    "TranscriptHistory",
+    "TranscriptHistoryUnavailableError",
+    "transcript",
+    "convert_eval_logs",
+    "list_eval_logs",
+    "list_eval_logs_async",
+    "read_eval_log",
+    "read_eval_log_async",
+    "read_eval_log_sample",
+    "read_eval_log_sample_summaries",
+    "read_eval_log_samples",
+    "read_eval_log_samples_by_id",
+    "condense_sample",
+    "condense_events",
+    "EventsData",
+    "expand_events",
+    "resolve_sample_attachments",
+    "resolve_sample_events_data",
+    "write_eval_log",
+    "write_eval_log_async",
+    "write_log_dir_manifest",
+    "retryable_eval_logs",
+    "bundle_log_dir",
+    "edit_score",
+    "recompute_metrics",
+    "ProvenanceData",
+    "LogEdit",
+    "LogUpdate",
+    "MetadataEdit",
+    "TagsEdit",
+    "edit_eval_log",
+    "invalidate_samples",
+    "uninvalidate_samples",
+    "recover_eval_log",
+    "recoverable_eval_logs",
+    "RecoverableEvalLog",
+    "RecoveryNotAvailable",
+    "ConnectionLimitChange",
+]
+
+
+_EVENT_MODULE_VERSION_3_137 = "0.3.137"
+_REMOVED_IN = "0.4"
+relocated_module_attribute(
+    "ApprovalEvent",
+    "agent_proving_ground.event.ApprovalEvent",
+    _EVENT_MODULE_VERSION_3_137,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "ErrorEvent",
+    "agent_proving_ground.event.ErrorEvent",
+    _EVENT_MODULE_VERSION_3_137,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "Event",
+    "agent_proving_ground.event.Event",
+    _EVENT_MODULE_VERSION_3_137,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "InfoEvent",
+    "agent_proving_ground.event.InfoEvent",
+    _EVENT_MODULE_VERSION_3_137,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "InputEvent",
+    "agent_proving_ground.event.InputEvent",
+    _EVENT_MODULE_VERSION_3_137,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "LoggerEvent",
+    "agent_proving_ground.event.LoggerEvent",
+    _EVENT_MODULE_VERSION_3_137,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "LoggingLevel",
+    "agent_proving_ground.event.LoggingLevel",
+    _EVENT_MODULE_VERSION_3_137,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "LoggingMessage",
+    "agent_proving_ground.event.LoggingMessage",
+    _EVENT_MODULE_VERSION_3_137,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "ModelEvent",
+    "agent_proving_ground.event.ModelEvent",
+    _EVENT_MODULE_VERSION_3_137,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "SampleInitEvent",
+    "agent_proving_ground.event.SampleInitEvent",
+    _EVENT_MODULE_VERSION_3_137,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "SampleLimitEvent",
+    "agent_proving_ground.event.SampleLimitEvent",
+    _EVENT_MODULE_VERSION_3_137,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "SandboxEvent",
+    "agent_proving_ground.event.SandboxEvent",
+    _EVENT_MODULE_VERSION_3_137,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "ScoreEvent",
+    "agent_proving_ground.event.ScoreEvent",
+    _EVENT_MODULE_VERSION_3_137,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "SpanBeginEvent",
+    "agent_proving_ground.event.SpanBeginEvent",
+    _EVENT_MODULE_VERSION_3_137,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "SpanEndEvent",
+    "agent_proving_ground.event.SpanEndEvent",
+    _EVENT_MODULE_VERSION_3_137,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "StateEvent",
+    "agent_proving_ground.event.StateEvent",
+    _EVENT_MODULE_VERSION_3_137,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "StepEvent",
+    "agent_proving_ground.event.StepEvent",
+    _EVENT_MODULE_VERSION_3_137,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "StoreEvent",
+    "agent_proving_ground.event.StoreEvent",
+    _EVENT_MODULE_VERSION_3_137,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "SubtaskEvent",
+    "agent_proving_ground.event.SubtaskEvent",
+    _EVENT_MODULE_VERSION_3_137,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "ToolEvent",
+    "agent_proving_ground.event.ToolEvent",
+    _EVENT_MODULE_VERSION_3_137,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "EventNode",
+    "agent_proving_ground.event.EventNode",
+    _EVENT_MODULE_VERSION_3_137,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "EventTree",
+    "agent_proving_ground.event.EventTree",
+    _EVENT_MODULE_VERSION_3_137,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "SpanNode",
+    "agent_proving_ground.event.SpanNode",
+    _EVENT_MODULE_VERSION_3_137,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "event_sequence",
+    "agent_proving_ground.event.event_sequence",
+    _EVENT_MODULE_VERSION_3_137,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "event_tree",
+    "agent_proving_ground.event.event_tree",
+    _EVENT_MODULE_VERSION_3_137,
+    _REMOVED_IN,
+)

@@ -1,0 +1,226 @@
+from agent_proving_ground._util.deprecation import relocated_module_attribute
+
+_ANALYSIS_MODULE_VERSION_3_18 = "0.3.119"
+_REMOVED_IN = "0.4"
+relocated_module_attribute(
+    "evals_df",
+    "agent_proving_ground.analysis.evals_df",
+    _ANALYSIS_MODULE_VERSION_3_18,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "EvalColumn",
+    "agent_proving_ground.analysis.EvalColumn",
+    _ANALYSIS_MODULE_VERSION_3_18,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "EvalColumns",
+    "agent_proving_ground.analysis.EvalColumns",
+    _ANALYSIS_MODULE_VERSION_3_18,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "EvalInfo",
+    "agent_proving_ground.analysis.EvalInfo",
+    _ANALYSIS_MODULE_VERSION_3_18,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "EvalTask",
+    "agent_proving_ground.analysis.EvalTask",
+    _ANALYSIS_MODULE_VERSION_3_18,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "EvalModel",
+    "agent_proving_ground.analysis.EvalModel",
+    _ANALYSIS_MODULE_VERSION_3_18,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "EvalColumns",
+    "agent_proving_ground.analysis.EvalColumns",
+    _ANALYSIS_MODULE_VERSION_3_18,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "EvalConfiguration",
+    "agent_proving_ground.analysis.EvalConfiguration",
+    _ANALYSIS_MODULE_VERSION_3_18,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "EvalTask",
+    "agent_proving_ground.analysis.EvalTask",
+    _ANALYSIS_MODULE_VERSION_3_18,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "EvalDataset",
+    "agent_proving_ground.analysis.EvalDataset",
+    _ANALYSIS_MODULE_VERSION_3_18,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "EvalResults",
+    "agent_proving_ground.analysis.EvalResults",
+    _ANALYSIS_MODULE_VERSION_3_18,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "EvalScores",
+    "agent_proving_ground.analysis.EvalScores",
+    _ANALYSIS_MODULE_VERSION_3_18,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "samples_df",
+    "agent_proving_ground.analysis.samples_df",
+    _ANALYSIS_MODULE_VERSION_3_18,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "SampleColumn",
+    "agent_proving_ground.analysis.SampleColumn",
+    _ANALYSIS_MODULE_VERSION_3_18,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "SampleSummary",
+    "agent_proving_ground.analysis.SampleSummary",
+    _ANALYSIS_MODULE_VERSION_3_18,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "SampleMessages",
+    "agent_proving_ground.analysis.SampleMessages",
+    _ANALYSIS_MODULE_VERSION_3_18,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "messages_df",
+    "agent_proving_ground.analysis.messages_df",
+    _ANALYSIS_MODULE_VERSION_3_18,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "MessageColumn",
+    "agent_proving_ground.analysis.MessageColumn",
+    _ANALYSIS_MODULE_VERSION_3_18,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "MessageContent",
+    "agent_proving_ground.analysis.MessageContent",
+    _ANALYSIS_MODULE_VERSION_3_18,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "MessageToolCalls",
+    "agent_proving_ground.analysis.MessageToolCalls",
+    _ANALYSIS_MODULE_VERSION_3_18,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "MessageColumns",
+    "agent_proving_ground.analysis.MessageColumns",
+    _ANALYSIS_MODULE_VERSION_3_18,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "MessageFilter",
+    "agent_proving_ground.analysis.MessageFilter",
+    _ANALYSIS_MODULE_VERSION_3_18,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "events_df",
+    "agent_proving_ground.analysis.events_df",
+    _ANALYSIS_MODULE_VERSION_3_18,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "EventColumn",
+    "agent_proving_ground.analysis.EventColumn",
+    _ANALYSIS_MODULE_VERSION_3_18,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "EventTiming",
+    "agent_proving_ground.analysis.EventTiming",
+    _ANALYSIS_MODULE_VERSION_3_18,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "ModelEventColumns",
+    "agent_proving_ground.analysis.ModelEventColumns",
+    _ANALYSIS_MODULE_VERSION_3_18,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "ToolEventColumns",
+    "agent_proving_ground.analysis.ToolEventColumns",
+    _ANALYSIS_MODULE_VERSION_3_18,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "Column",
+    "agent_proving_ground.analysis.Column",
+    _ANALYSIS_MODULE_VERSION_3_18,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "ColumnType",
+    "agent_proving_ground.analysis.ColumnType",
+    _ANALYSIS_MODULE_VERSION_3_18,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "ColumnError",
+    "agent_proving_ground.analysis.ColumnError",
+    _ANALYSIS_MODULE_VERSION_3_18,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "prepare",
+    "agent_proving_ground.analysis.prepare",
+    _ANALYSIS_MODULE_VERSION_3_18,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "log_viewer",
+    "agent_proving_ground.analysis.log_viewer",
+    _ANALYSIS_MODULE_VERSION_3_18,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "Operation",
+    "agent_proving_ground.analysis.Operation",
+    _ANALYSIS_MODULE_VERSION_3_18,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "model_info",
+    "agent_proving_ground.analysis.model_info",
+    _ANALYSIS_MODULE_VERSION_3_18,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "task_info",
+    "agent_proving_ground.analysis.task_info",
+    _ANALYSIS_MODULE_VERSION_3_18,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "ModelInfo",
+    "agent_proving_ground.analysis.ModelInfo",
+    _ANALYSIS_MODULE_VERSION_3_18,
+    _REMOVED_IN,
+)
+relocated_module_attribute(
+    "frontier",
+    "agent_proving_ground.analysis.frontier",
+    _ANALYSIS_MODULE_VERSION_3_18,
+    _REMOVED_IN,
+)

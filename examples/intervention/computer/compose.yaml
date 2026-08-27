@@ -1,0 +1,8 @@
+services:
+  default:
+    image: aisiuk/inspect-computer-tool
+    init: true
+    # Dynamically assign loopback host ports for vnc and novnc
+    ports:
+      - "127.0.0.1::5900"
+      - "127.0.0.1::6080"

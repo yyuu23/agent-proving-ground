@@ -1,0 +1,21 @@
+[project]
+name = "inspect_package"
+version = "0.1"
+description = "AgentProvingGround Extension Package"
+requires-python = ">=3.10"
+authors = [{name = "UK AISI"}]
+license = {text = "MIT"}
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+]
+dependencies = [
+    "agent_proving_ground"
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project.entry-points.agent_proving_ground]
+inspect_package = "inspect_package._registry"
+

@@ -1,0 +1,13 @@
+---
+reference: apg info
+description: Read version and configuration.
+---
+
+
+
+
+
+
+
+
+
